@@ -33,7 +33,15 @@ You will be asked for credentials, use these :
 username : mtobelem
 password : password
 ```
+Then you will be able to test your resquest at the '/town' endpoint.
 
+## Examples
+```sh
+http://127.0.0.1:8000/api/town/?fields=["name","population"]
+http://127.0.0.1:8000/api/town/?fields=["name","code"]
+http://127.0.0.1:8000/api/town/?fields=["name","population","code"]&filters={"field":"name","value": "Paris","predicate": "contains"}
+http://127.0.0.1:8000/api/town/?fields=["name","population","code"]&filters={"field":"code","value": "3","predicate": "lt"}
+```
 ## Tests
 
 To run the tests, `cd` into the directory where `manage.py` is:

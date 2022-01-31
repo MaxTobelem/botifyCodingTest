@@ -1,7 +1,6 @@
 from django.db import models
 
-# Create your models here.
-
+#Model used to modelize towns as described in the subject.
 class Town(models.Model):
     code = models.IntegerField()
     name = models.CharField(max_length=25)
@@ -11,3 +10,5 @@ class Town(models.Model):
     department_code = models.CharField(max_length=25)
     region_code = models.IntegerField()
     region_name = models.CharField(max_length=25)
+    def __str__(self):
+        return str(self.name) + " (" + str(self.department_code) + ")"
