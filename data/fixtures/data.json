@@ -1,0 +1,128 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$DibIS09npPBBfYC76Uf65d$hzDc7fnTRZPfFhDcfbR17NKF5KspL/zry0qFWS+/NrQ=",
+        "last_login": "2022-01-31T14:44:13.631Z",
+        "is_superuser": true,
+        "username": "mtobelem",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-01-31T14:10:31.408Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zg20umoaf4ghmk3wvxetnvu1fxwpmhba",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pACZQSX7nsGwgyDVA0kpV0Z765NutDtf-_9lwhxW0vYOi9hTuIilDj9bhjpwXUH6R7rrUlqdV1mlLsiD9rl1BI_r4f7d1BiL996HB2R46xsZLaD9v7MbCCRNzGjZmvQkB2Udh4QXAYGoKyU1gk8oxfvD_IOOBs:1nEXuf:UhruLZYETC5kRHrGPLQVLT2HPzP5HH1A0Nfvl2FpznE",
+        "expire_date": "2022-02-14T14:44:13.632Z"
+    }
+},
+{
+    "model": "data.town",
+    "pk": 1,
+    "fields": {
+        "code": 1,
+        "name": "Paris",
+        "population": 50000,
+        "average_age": 34.0,
+        "district_code": 75,
+        "department_code": "75000",
+        "region_code": 11,
+        "region_name": "Ile de France"
+    }
+},
+{
+    "model": "data.town",
+    "pk": 2,
+    "fields": {
+        "code": 2,
+        "name": "Puteaux",
+        "population": 30,
+        "average_age": 20.0,
+        "district_code": 92,
+        "department_code": "92800",
+        "region_code": 11,
+        "region_name": "Ile de France"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2022-01-31T14:32:56.416Z",
+        "user": [
+            "mtobelem"
+        ],
+        "content_type": [
+            "data",
+            "town"
+        ],
+        "object_id": "1",
+        "object_repr": "Town object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2022-01-31T14:33:00.694Z",
+        "user": [
+            "mtobelem"
+        ],
+        "content_type": [
+            "data",
+            "town"
+        ],
+        "object_id": "1",
+        "object_repr": "Town object (1)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2022-01-31T14:33:16.450Z",
+        "user": [
+            "mtobelem"
+        ],
+        "content_type": [
+            "data",
+            "town"
+        ],
+        "object_id": "1",
+        "object_repr": "Town object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Region name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2022-01-31T14:34:03.016Z",
+        "user": [
+            "mtobelem"
+        ],
+        "content_type": [
+            "data",
+            "town"
+        ],
+        "object_id": "2",
+        "object_repr": "Town object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
